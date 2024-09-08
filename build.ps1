@@ -10,7 +10,7 @@ $configuration = 'Release'
 
 $env:NoTargetFrameworkNet35 = ''
 
-$useMsbuild = $IsWindows -or $IsWindows -eq $null
+$useMsbuild = $IsWindows -or $null -eq $IsWindows
 if ($NoMsbuild) {
 	$useMsbuild = $false
 }
